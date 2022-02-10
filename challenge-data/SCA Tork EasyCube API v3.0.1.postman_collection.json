@@ -1,0 +1,424 @@
+{
+	"info": {
+		"_postman_id": "279e931c-5332-4824-bb2a-56efaac5f86b",
+		"name": "SCA Tork EasyCube API v3.0.1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "site",
+					"item": [
+						{
+							"name": "People Counters",
+							"item": [
+								{
+									"name": "/api/site/PeopleCounters",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "{{access_token}}",
+												"description": "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\""
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/site/PeopleCounters",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"site",
+												"PeopleCounters"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/site/PeopleCounters",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"site",
+														"PeopleCounters"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"errors\": [\n  {\n   \"propertyName\": \"<string>\",\n   \"errorMessage\": \"<string>\",\n   \"attemptedValue\": \"<object>\",\n   \"customState\": \"<object>\",\n   \"severity\": \"<integer>\",\n   \"errorCode\": \"<string>\",\n   \"formattedMessageArguments\": [\n    \"<object>\",\n    \"<object>\"\n   ],\n   \"formattedMessagePlaceholderValues\": \"<object>\",\n   \"resourceName\": \"<string>\"\n  },\n  {\n   \"propertyName\": \"<string>\",\n   \"errorMessage\": \"<string>\",\n   \"attemptedValue\": \"<object>\",\n   \"customState\": \"<object>\",\n   \"severity\": \"<integer>\",\n   \"errorCode\": \"<string>\",\n   \"formattedMessageArguments\": [\n    \"<object>\",\n    \"<object>\"\n   ],\n   \"formattedMessagePlaceholderValues\": \"<object>\",\n   \"resourceName\": \"<string>\"\n  }\n ],\n \"isValid\": \"<boolean>\"\n}"
+										}
+									]
+								},
+								{
+									"name": "/api/site/PeopleCounters/api/site/PeopleCounters/GetPresence",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "{{access_token}}",
+												"description": "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\""
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/site/PeopleCounters/api/site/PeopleCounters/GetPresence",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"site",
+												"PeopleCounters",
+												"api",
+												"site",
+												"PeopleCounters",
+												"GetPresence"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/site/PeopleCounters/api/site/PeopleCounters/GetPresence",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"site",
+														"PeopleCounters",
+														"api",
+														"site",
+														"PeopleCounters",
+														"GetPresence"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"errors\": [\n  {\n   \"propertyName\": \"<string>\",\n   \"errorMessage\": \"<string>\",\n   \"attemptedValue\": \"<object>\",\n   \"customState\": \"<object>\",\n   \"severity\": \"<integer>\",\n   \"errorCode\": \"<string>\",\n   \"formattedMessageArguments\": [\n    \"<object>\",\n    \"<object>\"\n   ],\n   \"formattedMessagePlaceholderValues\": \"<object>\",\n   \"resourceName\": \"<string>\"\n  },\n  {\n   \"propertyName\": \"<string>\",\n   \"errorMessage\": \"<string>\",\n   \"attemptedValue\": \"<object>\",\n   \"customState\": \"<object>\",\n   \"severity\": \"<integer>\",\n   \"errorCode\": \"<string>\",\n   \"formattedMessageArguments\": [\n    \"<object>\",\n    \"<object>\"\n   ],\n   \"formattedMessagePlaceholderValues\": \"<object>\",\n   \"resourceName\": \"<string>\"\n  }\n ],\n \"isValid\": \"<boolean>\"\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/site/Dispensers",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"description": "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\""
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/site/Dispensers",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"site",
+										"Dispensers"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/site/Dispensers",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"site",
+												"Dispensers"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"errors\": [\n  {\n   \"propertyName\": \"<string>\",\n   \"errorMessage\": \"<string>\",\n   \"attemptedValue\": \"<object>\",\n   \"customState\": \"<object>\",\n   \"severity\": \"<integer>\",\n   \"errorCode\": \"<string>\",\n   \"formattedMessageArguments\": [\n    \"<object>\",\n    \"<object>\"\n   ],\n   \"formattedMessagePlaceholderValues\": \"<object>\",\n   \"resourceName\": \"<string>\"\n  },\n  {\n   \"propertyName\": \"<string>\",\n   \"errorMessage\": \"<string>\",\n   \"attemptedValue\": \"<object>\",\n   \"customState\": \"<object>\",\n   \"severity\": \"<integer>\",\n   \"errorCode\": \"<string>\",\n   \"formattedMessageArguments\": [\n    \"<object>\",\n    \"<object>\"\n   ],\n   \"formattedMessagePlaceholderValues\": \"<object>\",\n   \"resourceName\": \"<string>\"\n  }\n ],\n \"isValid\": \"<boolean>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/site/Locations",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{access_token}}",
+										"description": "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\""
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/site/Locations",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"site",
+										"Locations"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/site/Locations",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"site",
+												"Locations"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"errors\": [\n  {\n   \"propertyName\": \"<string>\",\n   \"errorMessage\": \"<string>\",\n   \"attemptedValue\": \"<object>\",\n   \"customState\": \"<object>\",\n   \"severity\": \"<integer>\",\n   \"errorCode\": \"<string>\",\n   \"formattedMessageArguments\": [\n    \"<object>\",\n    \"<object>\"\n   ],\n   \"formattedMessagePlaceholderValues\": \"<object>\",\n   \"resourceName\": \"<string>\"\n  },\n  {\n   \"propertyName\": \"<string>\",\n   \"errorMessage\": \"<string>\",\n   \"attemptedValue\": \"<object>\",\n   \"customState\": \"<object>\",\n   \"severity\": \"<integer>\",\n   \"errorCode\": \"<string>\",\n   \"formattedMessageArguments\": [\n    \"<object>\",\n    \"<object>\"\n   ],\n   \"formattedMessagePlaceholderValues\": \"<object>\",\n   \"resourceName\": \"<string>\"\n  }\n ],\n \"isValid\": \"<boolean>\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "/api/Site",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{access_token}}",
+								"description": "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\""
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/Site",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Site"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Site",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Site"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"errors\": [\n  {\n   \"propertyName\": \"<string>\",\n   \"errorMessage\": \"<string>\",\n   \"attemptedValue\": \"<object>\",\n   \"customState\": \"<object>\",\n   \"severity\": \"<integer>\",\n   \"errorCode\": \"<string>\",\n   \"formattedMessageArguments\": [\n    \"<object>\",\n    \"<object>\"\n   ],\n   \"formattedMessagePlaceholderValues\": \"<object>\",\n   \"resourceName\": \"<string>\"\n  },\n  {\n   \"propertyName\": \"<string>\",\n   \"errorMessage\": \"<string>\",\n   \"attemptedValue\": \"<object>\",\n   \"customState\": \"<object>\",\n   \"severity\": \"<integer>\",\n   \"errorCode\": \"<string>\",\n   \"formattedMessageArguments\": [\n    \"<object>\",\n    \"<object>\"\n   ],\n   \"formattedMessagePlaceholderValues\": \"<object>\",\n   \"resourceName\": \"<string>\"\n  }\n ],\n \"isValid\": \"<boolean>\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "authentication",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//tests[\"Body has Authorization\"] = responseBody.has(\"Authorization\");",
+									"//tests[\"Authorization Header is present\"] = postman.getResponseHeader(\"Authorization\");",
+									"",
+									"var data = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"access_token\", data.access_token);",
+									"postman.setEnvironmentVariable(\"expires_in\", data.expires_in);",
+									"postman.setEnvironmentVariable(\"token_type\", data.token_type);",
+									"postman.setEnvironmentVariable(\"scope\", data.scope);",
+									"tests[\"Authorization environment variable is present\"] = postman.getEnvironmentVariable(\"access_token\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "client_id",
+									"value": "{{client_id}}",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "{{client_secret}}",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "{{grant_type}}",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "{{scope}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://login.easycube.torkglobal.com/connect/token",
+							"protocol": "https",
+							"host": [
+								"login",
+								"easycube",
+								"torkglobal",
+								"com"
+							],
+							"path": [
+								"connect",
+								"token"
+							]
+						},
+						"description": "URL and Parameters for Authentication\nCustomer needs to be authenticated, against the Tork Global Login API with required parameters\nas key-value in body of the request, to get a valid access token to access the TORK EasyCube data\nthrough the API:\n\n* URL : https://login.easycube.torkglobal.com/connect/token\n* client_id :\n* client_secret :\n* grant_type : client_credentials\n* scope : EasyCube.External.Api\n\n\n\nProvided by Essity / Generated by Facility Manager Application"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{access_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://easycube-external-api-web-c2m2jq5zkw6rc.azurewebsites.net"
+		}
+	]
+}
